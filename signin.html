@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <title>Sign In | Brooklyn College Student Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page page--gradient">
+    <header class="header">
+      <div class="header__inner header__inner--narrow">
+        <a href="index.html" class="header__logo-link">
+          <img src="images/brooklyn-CUNY-logo.png" alt="Brooklyn College, CUNY" class="header__logo">
+        </a>
+        <span class="header__title">Student Support</span>
+      </div>
+    </header>
+
+    <main class="signin">
+      <div class="signin__wrap">
+        <div class="signin__heading">
+          <h1>Sign in</h1>
+          <p>Use your BC WebCentral account</p>
+        </div>
+
+        <form class="signin__card" action="chat.html" method="GET" onsubmit="window.location.href='chat.html'; return false;">
+          <label for="webcentral-id" class="form-label">BC WebCentral ID</label>
+          <input
+            id="webcentral-id"
+            type="text"
+            inputmode="numeric"
+            autocomplete="username"
+            placeholder="8-digit CUNYfirst ID"
+            class="form-input"
+            aria-describedby="id-hint"
+          >
+          <p id="id-hint" class="form-hint">Your 8-digit CUNYfirst ID (EMPLID)</p>
+
+          <label for="password" class="form-label">Password</label>
+          <input
+            id="password"
+            type="password"
+            autocomplete="current-password"
+            placeholder="WebCentral password"
+            class="form-input"
+          >
+
+          <div>
+            <a
+              href="https://pub.brooklyn.edu/mfa_registration/reset_pass.jsp"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="form-link"
+            >Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn-primary">Sign in</button>
+        </form>
+
+        <p class="signin__back">
+          <a href="index.html">← Back to home</a>
+        </p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      Brooklyn College · The City University of New York
+    </footer>
+  </div>
+</body>
+</html>
