@@ -87,6 +87,7 @@ button {
 
 .header__inner--chat {
   max-width: 48rem;
+  justify-content: center;
 }
 
 .header__logo {
